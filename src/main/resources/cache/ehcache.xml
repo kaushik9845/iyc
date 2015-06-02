@@ -1,0 +1,76 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="false">
+    <diskStore path="java.io.tmpdir"/>
+
+    <!-- objects are evicted from the cache every 60 seconds -->
+    <cache name="overviewTable"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+
+ <!-- objects are evicted from the cache every 60 seconds -->
+    <cache name="personnelDetails"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+           
+    <cache name="umAndChange"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+    <cache name="netSales"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+     <cache name="costOfSales"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+      <cache name="finalTable"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+           
+       <cache name="ns_cos_um_cu_month"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="100"
+           eternal="false"
+           overflowToDisk="false"
+           maxElementsOnDisk="10000000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"/>
+                 
+  
+</ehcache>
