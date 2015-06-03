@@ -35,8 +35,8 @@ public class NewController {
 
 		JSONObject obj= new JSONObject();
 		
-		obj.put("home",eventService.getEventdata());
-		obj.put("info",eventService.getEventdata());
+		obj.put("home",homeService.getHomedata());
+		obj.put("info",infoService.getInfodata());
 		obj.put("event",eventService.getEventdata());
 		
 		return obj;	
